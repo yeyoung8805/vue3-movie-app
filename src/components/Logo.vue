@@ -1,5 +1,5 @@
 <template>
-  <RouterLink to="/" class="logo"> OMDbAPI.COM </RouterLink>
+  <RouterLink to="/" class="logo"> <span>OMDbAPI</span>.COM </RouterLink>
 </template>
 
 <style lang="scss" scoped>
@@ -9,5 +9,8 @@
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   color: $black;
+  span {
+    color: $primary;
+  }
 }
 </style>
