@@ -44,7 +44,7 @@ header {
   height: 70px;
   padding: 0 40px;
   display: flex;
-  align-items: center; /* 가운데 정렬 */
+  align-items: center; /* 수평방향으로 가운데 정렬 */
   .logo {
     margin-right: 40px; /* header 안에 있을 경우만 margin-right 40px 준다. */
   }
