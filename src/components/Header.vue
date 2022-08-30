@@ -2,7 +2,7 @@
   <header>
     <div class="nav">
       <div v-for="nav in navigations" :key="nav.name" class="nav-item">
-        <RouterLink v-bind:to="nav.href" class="nav-link">
+        <RouterLink v-bind:to="nav.href" active-class="router-link-active" class="nav-link">
           {{ nav.name }}
         </RouterLink>
       </div>
