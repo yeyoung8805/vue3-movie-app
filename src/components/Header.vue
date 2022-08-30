@@ -1,8 +1,10 @@
 <template>
   <header>
     <div class="nav">
-      <div class="nav-item">
-        <RouterLink class="nav-link"> About </RouterLink>
+      <div v-for="nav in navigations" :key="nav.name" class="nav-item">
+        <RouterLink v-bind:to="nav.href" class="nav-link">
+          {{ nav.name }}
+        </RouterLink>
       </div>
     </div>
   </header>
