@@ -1,5 +1,6 @@
 <template>
   <header>
+    <Logo />
     <div class="nav nav-pills">
       <div v-for="nav in navigations" :key="nav.name" class="nav-item">
         <RouterLink v-bind:to="nav.href" active-class="active" class="nav-link">
