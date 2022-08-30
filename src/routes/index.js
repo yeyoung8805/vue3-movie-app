@@ -1,5 +1,7 @@
 //페이지를 관리해주는 구성 파일
 import { createRouter, createWebHashHistory } from "vue-router";
+import Home from "./Home";
+import About from "./About";
 
 export default createRouter({
   //Hash
@@ -12,11 +14,11 @@ export default createRouter({
   routes: [
     {
       path: "/",
-      component: "",
+      component: Home,
     },
     {
       path: "/about",
-      component: "",
+      component: About,
     },
   ],
 });
