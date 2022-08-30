@@ -1,6 +1,7 @@
 //페이지를 관리해주는 구성 파일
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "./Home";
+import Movie from "./Movie";
 import About from "./About";
 
 export default createRouter({
@@ -15,6 +16,10 @@ export default createRouter({
     {
       path: "/",
       component: Home,
+    },
+    {
+      path: "/movie",
+      component: Movie,
     },
     {
       path: "/about",
