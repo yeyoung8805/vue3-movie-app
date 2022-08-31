@@ -30,7 +30,8 @@ export default {
           name: "year",
           items: (() => {
             const years = [];
-            for (let i = 2022; i >= 1985; i -= 1) {
+            const thisYear = new Date().getFullYear(); //2022
+            for (let i = thisYear; i >= 1985; i -= 1) {
               years.push(i);
             }
             return years;
