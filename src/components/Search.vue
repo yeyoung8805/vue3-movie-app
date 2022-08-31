@@ -28,7 +28,7 @@ export default {
         },
         {
           name: "year",
-          items: (function() {})(), //즉시실행 함수 
+          items: (() => {})(), //즉시실행 함수. 화살표 함수 형식으로 변경 가능 
         },
       ],
     };
