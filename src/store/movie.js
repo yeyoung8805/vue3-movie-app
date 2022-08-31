@@ -30,6 +30,8 @@ export default {
       commit("updateState", {
         movies: Search,
       });
+      console.log(totalResults);
+      console.log(typeof totalResults);
     },
   },
 };
