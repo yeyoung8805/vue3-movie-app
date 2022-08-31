@@ -56,8 +56,11 @@ export default {
 <style lang="scss" scoped>
 .container {
   display: flex;
-  > * { /* 자식 선택자 중에 전체를 의미 */
-
+  > * {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0; //margin-right 다 10px 주되, 가장 마지막 자식 요소에는 margin-right 없다.
+    }
   }
   .selects {
     display: flex;
