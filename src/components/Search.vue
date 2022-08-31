@@ -87,6 +87,7 @@ export default {
     width: 120px;
     height: 50px;
     font-weight: 700;
+    flex-shrink: 0; /* display:flex; 이더라도 .btn 의 width가 비율에 맞게 줄지 않고 원래의 120px 대로 보여지게 한다! */
   }
 }
 </style>
