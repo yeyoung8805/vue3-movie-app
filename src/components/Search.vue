@@ -58,6 +58,7 @@ export default {
   display: flex;
   > * {
     margin-right: 10px;
+    font-size: 15px;
     &:last-child {
       margin-right: 0;
     }
