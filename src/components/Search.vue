@@ -28,7 +28,13 @@ export default {
         },
         {
           name: "year",
-          items: (() => {})(), //즉시실행 함수. 화살표 함수 형식으로 변경 가능 
+          items: (() => {
+            const years = [];
+            for (let i = 2022; i >= 1985; i -= 1) {
+              years.push(i);
+            }
+            return years;
+          })(),
         },
       ],
     };
