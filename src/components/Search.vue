@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     async apply() {
-
+      this.$store.dispatch("movie/searchMovies", payload);
     },
   },
 };
