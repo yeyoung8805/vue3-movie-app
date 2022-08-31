@@ -4,9 +4,15 @@ export default {
   namespaced: true,
   state: () => ({
     movies: [],
+    message: "",
+    loading: false,
   }),
   getters: {},
   mutations: {
+    assignMovies(state, Search) {
+      state.movies = Search;
+    },
+    //need more mutations for message, loading etc..
     resetMovies(state) {
       state.movies = [];
     },
@@ -19,7 +25,8 @@ export default {
       const res = await axios.get(
         `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${title}&type=${type}&y=${year}&page=1`
       );
-      console.log(res);
+      const { Search, totalResults } = res.data;
+      context.commit("assignMovies", Search);
     },
   },
 };
