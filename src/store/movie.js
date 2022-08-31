@@ -2,7 +2,7 @@ export default {
   //module로 활용할수 있다는 뜻
   namespaced: true,
   //취급해야 하는 data
-  state: function () {
+  state: () => {
     return {
       movies: [],
     };
