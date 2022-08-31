@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     async apply() {
-      this.$store.dispatch("movie/searchMovies", {
+      this.$store.dispatch("hello/searchMovies", {
         title: this.title,
         type: this.type,
         number: this.number,

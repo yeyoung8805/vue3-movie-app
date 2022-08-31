@@ -4,7 +4,7 @@ import about from "./about.js";
 
 export default createStore({
   modules: {
-    movie,
+    hello: movie,
     about,
   },
 });
