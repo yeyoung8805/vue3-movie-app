@@ -30,8 +30,11 @@ export default {
       commit("updateState", {
         movies: Search,
       });
-      console.log(totalResults);
-      console.log(typeof totalResults);
+      console.log(totalResults); //310 -> 31번 요청
+      console.log(typeof totalResults); //string
+
+      const total = parseInt(totalResults, 10);
+      const pageLength = Math.ceil(total / 10);
     },
   },
 };
