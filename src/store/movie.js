@@ -39,6 +39,9 @@ export default {
       //추가 요청 전송해야 한다.
       if (pageLength > 1) {
         for (let page = 2; page <= pageLength; page += 1) {
+          if (page > (number / 10)) {
+            break;
+          }
           const res = await axios.get(
             `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${title}&type=${type}&y=${year}&page=${page}`
           );
