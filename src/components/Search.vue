@@ -56,5 +56,8 @@ export default {
 <style lang="scss" scoped>
 .container {
   display: flex;
+  .selects {
+    display: flex;
+  }
 }
 </style>
