@@ -6,6 +6,16 @@
       type="text"
       placeholder="Search for Movies, Series & more"
     />
+    <div class="selects">
+      <select
+        v-for="filter in filters"
+        v-model="$data[filter.name]"
+        :key="filter.name"
+        class="form-select"
+      >
+        <option></option>
+      </select>
+    </div>
   </div>
 </template>
 
