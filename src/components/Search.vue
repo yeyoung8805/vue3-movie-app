@@ -58,6 +58,9 @@ export default {
   display: flex;
   .selects {
     display: flex;
+    select {
+      width: 120px;
+    }
   }
 }
 </style>
