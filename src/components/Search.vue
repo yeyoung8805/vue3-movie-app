@@ -13,6 +13,7 @@
         :key="filter.name"
         class="form-select"
       >
+        <option value="">All Years</option>
         <option v-for="item in filter.items" :key="item">
           {{ item }}
         </option>
