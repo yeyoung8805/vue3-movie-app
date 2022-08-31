@@ -56,6 +56,9 @@ export default {
 <style lang="scss" scoped>
 .container {
   display: flex;
+  > * { /* 자식 선택자 중에 전체를 의미 */
+
+  }
   .selects {
     display: flex;
     select {
