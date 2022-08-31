@@ -29,8 +29,6 @@ export default {
       const { Search, totalResults } = res.data;
       commit("updateState", {
         movies: Search,
-        message: "Hello world!",
-        loading: true,
       });
     },
   },
