@@ -10,7 +10,6 @@ export default {
   getters: {},
   mutations: {
     updateState(state, payload) {
-      // ['movies', 'message', 'loading']
       Object.keys(payload).forEach((key) => {
         state[key] = payload[key];
       });
