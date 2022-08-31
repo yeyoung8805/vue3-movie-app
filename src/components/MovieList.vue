@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="inner">
-      <MovieItem v-for="movie in movies" :key="movie.imdbID" :movie="movie" />
+      <MovieItem v-for="hello in movies" :key="hello.imdbID" :movie="hello" />
     </div>
   </div>
 </template>
