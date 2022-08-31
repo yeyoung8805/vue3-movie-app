@@ -6,7 +6,11 @@ export default {
     movies: [],
   }),
   //computed 계산된 데이터를 만들어내는 상태
-  getters: "",
+  getters: {
+    movieIds(state) {
+      return state.movies.map((m) => m.imdbID);
+    },
+  },
   //methods 와 유사한 mutations, actions
   mutations: "",
   actions: "",
