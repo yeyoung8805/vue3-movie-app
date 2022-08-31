@@ -9,10 +9,9 @@ export default {
   }),
   getters: {},
   mutations: {
-    assignMovies(state, Search) {
-      state.movies = Search;
+    updateState(state, payload) {
+      
     },
-    //need more mutations for message, loading etc..
     resetMovies(state) {
       state.movies = [];
     },
@@ -26,7 +25,9 @@ export default {
         `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${title}&type=${type}&y=${year}&page=1`
       );
       const { Search, totalResults } = res.data;
-      context.commit("assignMovies", Search);
+      context.commit("updateState", {
+        movies: Search,
+      });
     },
   },
 };
