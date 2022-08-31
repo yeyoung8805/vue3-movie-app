@@ -20,10 +20,8 @@ export default {
   },
   //actions : 비동기로 작동한다.
   actions: {
-    searchMovies(context) {
-      context.state;
-      context.getters;
-      context.commit;
+    searchMovies({state, getters, commit}) {
+
     },
   },
 };
