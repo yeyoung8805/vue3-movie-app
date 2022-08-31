@@ -13,7 +13,9 @@
         :key="filter.name"
         class="form-select"
       >
-        <option></option>
+        <option v-for="item in filter.items" :key="item">
+          {{ item }}
+        </option>
       </select>
     </div>
   </div>
