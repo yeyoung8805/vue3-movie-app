@@ -9,9 +9,7 @@ export default {
   }),
   getters: {},
   mutations: {
-    updateState(state, payload) {
-      
-    },
+    updateState(state, payload) {},
     resetMovies(state) {
       state.movies = [];
     },
@@ -27,6 +25,8 @@ export default {
       const { Search, totalResults } = res.data;
       context.commit("updateState", {
         movies: Search,
+        message: "Hello world!",
+        loading: true,
       });
     },
   },
