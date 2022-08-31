@@ -12,9 +12,7 @@ export default {
     updateState(state, payload) {
       // ['movies', 'message', 'loading']
       Object.keys(payload).forEach((key) => {
-        state["movies"] = payload["movies"];
-        state["message"] = payload["message"];
-        state["loading"] = payload["loading"];
+        state[key] = payload[key];
       });
     },
     resetMovies(state) {
