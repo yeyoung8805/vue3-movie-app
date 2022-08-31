@@ -9,7 +9,14 @@ export default {
   }),
   getters: {},
   mutations: {
-    updateState(state, payload) {},
+    updateState(state, payload) {
+      // ['movies', 'message', 'loading']
+      Object.keys(payload).forEach((key) => {
+        state.movies = payload.movies;
+        state.message = payload.message;
+        state.loading = payload.loading;
+      });
+    },
     resetMovies(state) {
       state.movies = [];
     },
