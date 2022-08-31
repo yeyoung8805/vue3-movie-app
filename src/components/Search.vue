@@ -5,6 +5,7 @@
       class="form-control"
       type="text"
       placeholder="Search for Movies, Series & more"
+      @keyup.enter="apply"
     />
     <div class="selects">
       <select
@@ -19,6 +20,7 @@
         </option>
       </select>
     </div>
+    <button class="btn btn-primary" @click="apply">Apply</button>
   </div>
 </template>
 
@@ -53,6 +55,11 @@ export default {
       ],
     };
   },
+  methods: {
+    apply() {
+      //Search Movies..
+    },
+  },
 };
 </script>
 
@@ -75,6 +82,11 @@ export default {
         margin-right: 0;
       }
     }
+  }
+  .btn {
+    width: 120px;
+    height: 50px;
+    font-weight: 700;
   }
 }
 </style>
