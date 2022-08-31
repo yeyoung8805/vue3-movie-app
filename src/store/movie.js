@@ -20,7 +20,7 @@ export default {
   },
   //actions : 비동기로 작동한다.
   actions: {
-    searchMovies({state, getters, commit}) {
+    searchMovies() {
 
     },
   },
