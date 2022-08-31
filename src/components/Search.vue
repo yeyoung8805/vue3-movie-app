@@ -59,13 +59,17 @@ export default {
   > * {
     margin-right: 10px;
     &:last-child {
-      margin-right: 0; //margin-right 다 10px 주되, 가장 마지막 자식 요소에는 margin-right 없다.
+      margin-right: 0;
     }
   }
   .selects {
     display: flex;
     select {
       width: 120px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
